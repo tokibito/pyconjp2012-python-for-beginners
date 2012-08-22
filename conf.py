@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'PyCon JP 2012 Pythonプログラミングハンズオン(初心者向け)'
+project = u'PyCon JP 2012 Pythonプログラミングハンズオン(初級者向け)'
 copyright = u'2012, Shinya Okano'
 
 # The version info for the project you're documenting, acts as replacement for
