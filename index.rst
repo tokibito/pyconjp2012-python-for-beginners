@@ -36,3 +36,8 @@ Contents:
 ------------
 
 * Windows、MacOSX、Linux(Ubuntuなど)のいずれかのOSがインストールされたノートPC(可能ならPython2.7をインストールしてきてください)
+
+PyCon JPについて
+----------------
+
+* `PyCon JP 2012 <http://2012.pycon.jp/>`_
