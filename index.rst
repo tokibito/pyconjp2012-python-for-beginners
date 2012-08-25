@@ -44,3 +44,4 @@ PyCon JPについて
    :maxdepth: 2
 
    about_python
+   install_python
