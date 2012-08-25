@@ -73,6 +73,6 @@ Battlefield 2、Battlefield 2142は、PC用の一人称視点のシューティ�
 `Pythonを使っている製品あるいはソフトウェアの一覧 - Wikipedia <http://ja.wikipedia.org/wiki/Python%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E8%A3%BD%E5%93%81%E3%81%82%E3%82%8B%E3%81%84%E3%81%AF%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E4%B8%80%E8%A6%A7>`_
 
 次は
-====
+----
 
-Pythonについて知ることができたら、次はPythonプログラミングのための準備をしましょう。
+Pythonについて知ることができたら、次はPythonプログラミングのための用意をしましょう。
