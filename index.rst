@@ -45,3 +45,4 @@ PyCon JPについて
 
    about_python
    install_python
+   start_python
