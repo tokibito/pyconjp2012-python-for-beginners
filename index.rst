@@ -1,11 +1,6 @@
 PyCon JP 2012 Pythonプログラミングハンズオン(初級者向け)
 ========================================================
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-
 概要
 ----
 
@@ -41,3 +36,11 @@ PyCon JPについて
 ----------------
 
 * `PyCon JP 2012 <http://2012.pycon.jp/>`_
+
+目次
+----
+
+.. toctree::
+   :maxdepth: 2
+
+   about_python
