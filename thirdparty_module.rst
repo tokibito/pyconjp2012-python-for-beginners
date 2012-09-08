@@ -22,13 +22,13 @@ distributeのインストール
 
 distributeのインストールはWebインストール用のスクリプトを使うと簡単です。
 
-`http://python-distribute.org/distribute_setup.py`_
+http://python-distribute.org/distribute_setup.py
 
 PythonでWebインストール用のスクリプトを実行すると、インストールされます。MacOSXやUbuntuの場合はsudoでPythonを実行する必要があります。
 
 ::
 
-   > python http://python-distribute.org/distribute_setup.py
+   > python distribute_setup.py
 
 distributeをインストールしたら、easy_installコマンドが使えるか試してみましょう。
 
