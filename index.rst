@@ -46,3 +46,7 @@ PyCon JPについて
    about_python
    install_python
    start_python
+   basic_syntax
+   script_module
+   thirdparty_module
+   references
