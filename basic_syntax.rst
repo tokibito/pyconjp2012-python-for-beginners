@@ -208,6 +208,69 @@ or演算は結果が真になる場合、「左から順に見て一番最初に
 データ構造
 ----------
 
+整数, 小数
+~~~~~~~~~~
+
+.. doctest::
+
+   >>> 1234
+   1234
+   >>> 3.14
+   3.14
+
+真偽値
+~~~~~~
+
+.. doctest::
+
+   >>> True
+   True
+   >>> False
+   False
+
+文字列
+~~~~~~
+
+文字列は ``'`` か ``"`` で囲みます。二つに差はありません。
+
+.. doctest::
+
+   >>> 'Good morning, Feiz!'
+   'Good morning, Feiz!'
+
+文字列に改行を含めるには、 改行文字 ``\n`` を使うか、三連の(ダブル)クォーテーションで囲みます。
+
+.. doctest::
+
+   >>> print 'Feiz!\nGood Bye!!'
+   Feiz!
+   Good Bye!!
+   >>> print """Azuma
+   ... Kenta"""
+   Azuma
+   Kenta
+
+エスケープシーケンス(``\``)をそのまま表示するには、 ``\\`` とニ連続で書くか、raw文字列を使います。
+
+raw文字列は、クォーテーションの前に ``r`` をつけて表します。
+
+.. doctest::
+
+   >>> print 'Feiz!\nFeeeeeeiz!!'  # 何もしない場合改行して表示される
+   Feiz!
+   Feeeeeeiz!!
+   >>> print 'Feiz!\\nFeeeeeiz!!'  # 2連続で書く場合
+   Feiz!\nFeeeeeiz!!
+   >>> print r'Feiz!\nGood Bye!!' # raw文字列を使う場合
+   Feiz!\nGood Bye!!
+
+クォーテーションの前にuをつけるとUnicode文字列になります。
+
+.. doctest::
+
+   >>> u"あずま"
+   u'\u3042\u305a\u307e'
+
 制御構文
 --------
 
