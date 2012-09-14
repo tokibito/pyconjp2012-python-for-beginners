@@ -50,3 +50,5 @@ PyCon JPについて
    script_module
    thirdparty_module
    references
+   appendix2
+   problem
