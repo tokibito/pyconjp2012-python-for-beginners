@@ -41,7 +41,7 @@ PyCon JPについて
 ----
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    about_python
    install_python
