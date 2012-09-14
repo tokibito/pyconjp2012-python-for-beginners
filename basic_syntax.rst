@@ -526,11 +526,150 @@ Pythonの ``for`` 文はリストやタプルの要素を順番に反復処理�
   x = 2
   done
 
+繰り返し(while)
+~~~~~~~~~~~~~~~
+
+Pythonの ``while`` 文は条件を満たす間はずっと反復処理を行います。
+
+**while文の書式**:
+
+::
+
+   while 条件式:
+       反復処理
+
+.. doctest::
+
+   >>> x = 0
+   >>> while x < 10:  # xの値が10未満の間は繰り返す
+   ...     print(x),
+   ...     x += 1  # xの値を1増加
+   0 1 2 3 4 5 6 7 8 9
+
 関数
 ----
 
+同じ処理を何度も記述するのを避けるために、複数の処理を関数でまとめることができます。
+
+関数では引数(パラメータ)を受け取って処理を行い、結果を返します。
+
+**関数の書式**:
+
+::
+
+   def 関数名(パラメータ1, パラメータ2, ...):
+       関数の処理
+       return 処理の結果
+
+処理の結果を返す必要がない場合は、 ``return`` は省略できます。returnを省略すると、Noneが返されます。
+
+.. doctest::
+
+   >>> def hello():  # hello関数の定義
+   ...     print("Hello, World!")
+   ...
+   >>> hello()  # hello関数の使用
+   Hello, World!
+   >>> def add(x, y):  # add関数の定義
+   ...     return x + y
+   ...
+   >>> add(1, 2)
+   3
+
+デフォルト引数
+~~~~~~~~~~~~~~
+
+Pythonでは引数のデフォルトの値を決められます。該当の引数が与えられない場合にデフォルトの値が関数に渡されます。
+
+.. doctest::
+
+  >>> def ian(word='black'):
+  ...      print '%s ian' % word
+  ...
+  >>> ian()
+  black ian
+  >>> ian('white')
+  white ian
+
+可変長引数
+~~~~~~~~~~
+
+``*`` からはじまる引数で可変長の引数をリストとして取得できます。
+
+.. doctest::
+
+   >>> def sum(*args):
+   ...     result = 0
+   ...     for x in args:
+   ...         result += x
+   ...     return result
+   ...
+   >>> sum(1,2,3,4,5,6,7,8,9,10)
+   55
+   >>> sum(1, 2, 3)
+   6
+
+可変長キーワード引数
+~~~~~~~~~~~~~~~~~~~~
+
+``**`` からはじまる引数で可変長のキーワード引数を辞書として取得できます。
+
+.. doctest::
+
+   >>> def f(**kwargs):
+   ...     return kwargs
+   >>> f(a=1, b=2, c=3)
+   {'a': 1, 'c': 3, 'b': 2}
+   >>> def g(**kwargs):
+   ...     for key, value in kwargs.items():
+   ...         print("{} {}".format(key, value))
+   >>> g(a=1, b=2, c=3)
+   a 1
+   c 3
+   b 2
+
+特殊な引数指定方法
+~~~~~~~~~~~~~~~~~~
+
+リストや辞書の各要素を引数として渡すこともできます。
+
+引数が複雑な関数を呼び出すときや、条件によって引数が細かく変化するような場合に有用です。
+
+.. doctest::
+
+   >>> def func_a(x, y, z):
+   ...     print(x + y + z)
+   ...
+   >>> args = [1, 3, 5]
+   >>> func_a(*args)  # func_a(1, 3, 5)という呼び出しと等価
+   9
+   >>> def func_b(name="bucho", age=36):
+   ...     print("{} {}".format(name, age))
+   ...
+   >>> kwargs = {'name': "feiz", 'age': 24}
+   >>> func_b(**kwargs)  # func_b(name="feiz", age=24)という呼び出しと等価
+   feiz 24
+
 クラス
 ------
+
+自分でデータ型を作成したい場合、Pythonではクラスを作ります。
+
+.. doctest::
+
+   >>> class Person(object):
+   ...     def __init__(self, name, words):
+   ...         self.name = name
+   ...         self.words = words
+   ...     def say(self):
+   ...         print(u'「{}」と{}さん'.format(self.words, self.name))
+   ...
+   >>> feiz = Person('feiz', u'ふぇ')
+   >>> feiz.say()
+   「ふぇ」とfeizさん
+   >>> tokibito = Person('tokibito', u'ぬるぽ')
+   >>> tokibito.say()
+   「ぬるぽ」とtokibitoさん
 
 外部モジュールのインポート
 --------------------------
